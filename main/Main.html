@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS</title>
+</head>
+<body>
+<div id="main">
+  <p>First para.</p>
+  <p>Second para.</p>
+</div>
+
+<!-- ideally should be in different js file-->
+<script>
+  <!-- capturing the content of the para and storing in s -->
+
+  s=document.getElementById("demo").innerHTML;
+  //console logging it
+  console.log(s);
+  //DOM onclick
+    document.getElementById("demo").onclick=function (){
+      // alert onclick
+      alert("yo!");}
+
+
+    //DOM get and gets
+  const x = document.getElementById("main");
+  const y = document.getElementsByTagName("p");
+  console.log("this is the element at index[0]=> "+ y[0].innerHTML);
+  console.log("this is the element at index[1]=> "+y[1].innerHTML);
+
+</script>
+
+</body>
+</html>
